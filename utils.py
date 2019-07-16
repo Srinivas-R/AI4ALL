@@ -18,7 +18,7 @@ def load_data():
     cat2label = defaultdict(lambda: None)
     label2cat = defaultdict(lambda: None)
     next_label = 0
-    for root, dirs, files in os.walk("project_images"):
+    for root, dirs, files in os.walk("AI4ALL/project_images"):
         for file in files:
             if file.endswith(".jpg") or file.endswith(".JPG"):
                 img_file = os.path.join(root, file)
