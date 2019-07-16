@@ -26,7 +26,7 @@ def load_data():
                 img.thumbnail((img_dim, img_dim))
                 images.append(img_to_array(img))
                 
-                img_category = root.split("/")[1]
+                img_category = root.split("/")[2]
                 if cat2label[img_category] is None:
                     cat2label[img_category] = next_label
                     label2cat[next_label] = img_category
