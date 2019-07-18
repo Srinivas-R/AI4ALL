@@ -58,7 +58,9 @@ def augment_data(images, labels):
     final_images = []
     final_labels = []
     
-    for image, label in zip(images, labels):
+    for idx in range(images.shape[0]):
+        image = images[idx]
+        label = labels[idx]
         options = [0, 1, 2, 3, 4]
         version = np.random.choice(options)
         
