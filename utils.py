@@ -90,8 +90,8 @@ def augment_data(images, labels):
             final_images.append(rotated_image)
             final_labels.append(label)
     
-    final_images = np.asarray(final_images)
-    final_labels = np.asarray(final_labels)
+    final_images = np.array(final_images)
+    final_labels = np.array(final_labels)
     return final_images, final_labels
 
 def display_images(images):
